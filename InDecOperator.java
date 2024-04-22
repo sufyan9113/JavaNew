@@ -1,8 +1,8 @@
-public class IncDecOperator 
+public class InDecOperator 
 {
+    
     public static void main(String[] args) 
     {
-<<<<<<< HEAD
         int a=5;
         int b;
 
@@ -13,15 +13,8 @@ public class IncDecOperator
         System.out.println(a);
         System.out.println(b);
 
-        
 
-       
-=======
-        int a=10;
-        int b=5;
-
-        a+=1;
-        System.out.println(a);
->>>>>>> 5d7aec9151583ef76ad9aac6d24c5de61054f8f6
     }
 }
+
+
