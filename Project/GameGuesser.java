@@ -37,8 +37,22 @@ class Umpire
     {
         if(player1Score==player2Score && player1Score==player3Score)
         {
-            System.out.println("Match Tied");
+            System.out.println("Match Tied between all players");
         }
+        else if(player1Score==player2Score)
+        {
+            System.out.println("Match Tied between player1 and player2");
+        }
+        else if(player1Score==player3Score)
+        {
+            System.out.println("Match Tied between player1 and player3");
+        }
+        else if(player2Score==player3Score)
+        {
+            System.out.println("Match Tied between player2 and player3");
+        }
+    
+        
         else if(player1Score>player2Score && player1Score> player3Score)
         {
             System.out.println("Winner: Player1 Score: "+player1Score);
