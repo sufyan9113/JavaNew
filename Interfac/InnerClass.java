@@ -1,55 +1,34 @@
 package Interfac;
-
-import Interfac.Person.Family;
-
-class InnerClass
+public class InnerClass
 {
     public static void main(String[] args) 
     {
-        Person p=new Person();
-        p.dispPerson();
+       /*  Car c=new Car();
+        Car.Engine e=c.new Engine();
+        c.carStart();
+        e.engineStart();
+        */
+      //  new Car().carStart();
+       // new Car().new Engine().engineStart();
 
-        Person.Address a=p.new Address(); // after outer class object
-        a.dispPersonAdd();
-
-     //  Person.Family f=new Person.Family();
-      // f.dispPersonFamily();
-      // Person.Family.dispPersonFamily();
-        Family.dispPersonFamily();
+       Car.Engine e=new Car().new Engine();
+       e.engineStart();
+       
     }
 }
-class Person
+
+class Car
 {
-    String name;
-    int age;
-
-    public void dispPerson()
+    void carStart()
     {
-        System.out.println("person class details outer class");
+        System.out.println("car start");
     }
 
-    class Address
+    class Engine
     {
-        String state;
-        String city;
-        int pincode;
-
-        public void dispPersonAdd()
+        void engineStart()
     {
-        System.out.println("adress class details inner class");
+        System.out.println("engine start");
     }
     }
-
-    static class Family
-    {
-        int familyMember;
-        String Surname;
-
-        public static void dispPersonFamily()
-        {
-            System.out.println("family class details inner class static");
-        }
-
-    }
-
 }

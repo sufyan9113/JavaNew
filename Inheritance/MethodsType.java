@@ -8,6 +8,7 @@ public class MethodsType
         s.disp();
         s.check();
         s.show();
+        
     }
 }
 
@@ -24,6 +25,7 @@ class SuperClass
      void check()
     {
         System.out.println("check superclass");
+       
     }
 }
 

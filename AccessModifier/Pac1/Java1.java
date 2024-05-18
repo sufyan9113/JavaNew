@@ -2,7 +2,7 @@ package AccessModifier.Pac1;
 import AccessModifier.Pac2.*;
 
 
-public class Java1 extends Java4
+public class Java1 extends AccessModifier.Pac2.Java4
 {
      protected int age1=8;
     
