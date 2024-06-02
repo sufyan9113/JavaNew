@@ -1,6 +1,6 @@
 package Interfac;
 
-interface Ab
+ interface Ab
 {
   //  int a; vairable are public static final by default;
       int a=10;

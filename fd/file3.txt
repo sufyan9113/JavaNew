@@ -1,0 +1,5 @@
+100write
+100write
+true
+10.8
+c

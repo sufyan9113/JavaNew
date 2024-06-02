@@ -2,17 +2,18 @@ package AccessModifier.Pac1;
 import AccessModifier.Pac2.*;
 
 
-public class Java1 extends AccessModifier.Pac2.Java4
+public class Java1 extends Java3
 {
      protected int age1=8;
     
     public static void main(String[] args) 
     {
         
+ 
+        Java1 j1=new Java1();
+        System.out.println(j1.age3); //same class
+        j1.chec();
 /* 
-         Java1 j1=new Java1();
-        System.out.println(j1.age1); //same class
-
         Java2 j2=new Java2();
         System.out.println(j2.age2); //outside class same package
 
@@ -22,10 +23,8 @@ public class Java1 extends AccessModifier.Pac2.Java4
         Java4 j4=new Java4();
         System.out.println(j4.age4); //non-subclass outside package
 */
-        Java4 j=new Java4();
-        System.out.println(j.age4);
-        j.disp();
-
+        
+        
 
 
     }
