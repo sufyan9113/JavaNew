@@ -72,7 +72,7 @@ class Link
 class Producer extends Thread
 {
     Link k;
-
+    int i=1;
     Producer(Link k)
     {
         this.k=k;
@@ -80,7 +80,7 @@ class Producer extends Thread
 
     public void run()
     {
-        int i=1;
+        
         while(i<100)
         {
             k.put(i++);
