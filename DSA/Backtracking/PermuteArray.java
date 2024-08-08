@@ -17,8 +17,7 @@ public class PermuteArray
             System.out.println(Arrays.toString(a));
             
         }
-        else
-        {
+       
             for(int i=l; i<n; i++)
             {
                 swap(l,i,a);
@@ -26,15 +25,15 @@ public class PermuteArray
                 swap(l,i,a);
 
             }
-        }
+        
     }
 
-    public static int[] swap(int i, int j,int[]a)
+    public static void swap(int i, int j,int[]a)
     {
         int temp=a[i];
         a[i]=a[j];
         a[j]=temp;
 
-        return a;
+        
     }
 }

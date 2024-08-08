@@ -1,3 +1,4 @@
+package Assignments;
 public class SDAssignQ1 
 {
 public static void main(String[] args) 
